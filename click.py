@@ -23,7 +23,7 @@ def click_at_scheduled_time(
             # pyautogui.click(x=target_x, y=target_y, button='left')
 
             pyautogui.click(x=mouse_x, y=mouse_y, button="left")
-            time.sleep(0.5)  #
+            time.sleep(1)  #
             pyautogui.click(x=mouse_x, y=mouse_y, button="left")
 
             break
@@ -39,8 +39,8 @@ target_y = 1000
 # target_minute = int(input("원하는 클릭 시간(분): "))
 # target_second = int(input("원하는 클릭 시간(초): "))
 
-target___hour = int(19)
-target_minute = int(33)
+target___hour = int(20)
+target_minute = int(00)
 target_second = int(00)
 
 click_at_scheduled_time(target_x, target_y, target___hour, target_minute, target_second)
